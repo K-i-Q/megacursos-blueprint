@@ -39,12 +39,11 @@ export function Topbar({ onMenuClick, sidebarOpen }: TopbarProps) {
   return (
     <header
       className={cn(
-        'fixed top-0 right-0 z-30 h-16 border-b border-border transition-all duration-300',
+        'fixed top-0 left-0 right-0 z-30 h-16 border-b border-border transition-all duration-300',
         'bg-background/80 backdrop-blur-xl',
         'lg:left-64',
         !sidebarOpen && 'lg:left-20'
       )}
-      style={{ left: 0 }}
     >
       <div className="flex h-full items-center justify-between px-4 lg:px-6">
         {/* Left side */}
